@@ -1,0 +1,15 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "W32FTX2H6D.com.bifit.pmobile"],
+             "components": [
+               {
+                  "/": "/web_banking/protected/service/sbp_transfer",
+                  "comment": "Настройки СБП"
+               }
+             ]
+           }
+       ]
+   }
+}
