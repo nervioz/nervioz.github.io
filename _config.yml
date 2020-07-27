@@ -1,2 +1,2 @@
 include: [.well-known]
-port: 9443
+port: 1443
