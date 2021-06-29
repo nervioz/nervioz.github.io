@@ -7,6 +7,10 @@
                {
                   "/": "/sbp",
                   "comment": "Настройки СБП"
+               },
+               {
+                  "/": "/sbp/me2me_req/*",
+                  "comment": "Matches any URL whose path starts with /buy/"
                }
              ]
            }
