@@ -1,4 +1,31 @@
-Hello World
-!!!!!
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ссылка</title>
+</head>
+<body>
+<label for="sbpId">
+    Enter sbpId
+</label>
+<input id="sbpId" value="bank600000000001"/>
+<br>
+<label for="linkId">
+    enter tokenIntentId
+</label>
+<input id="linkId"/>
+<br>
+<button onclick="generate()">Generate</button>
 
-<a href="bank600000000001://sbpay/tokenIntent/37134149-a116-4698-bab8-285f68e9bec5" id="link">bank600000000001://sbpay/tokenIntent/37134149-a116-4698-bab8-285f68e9bec5</a>
+<script type="text/javascript">
+
+    var generate = function () {
+        var tokenId = document.getElementById('linkId').value
+        var sbpId = document.getElementById('sbpId').value
+        document.write ('<a href="' + sbpId + '://sbpay/tokenIntent/' + tokenId +'" id="link">' + sbpId + '://sbpay/tokenIntent/' + tokenId + '</a>')
+    }
+
+</script>
+
+</body>
+</html>
