@@ -2,11 +2,23 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "W32FTX2H6D.com.bifit.pmobile"],
+             "appIDs": ["6NXTR692GP.com.bifit.mobile.corporate.icbru", "W32FTX2H6D.com.bifit.pmobile", "W32FTX2H6D.com.bifit.mobile.private", "W32FTX2H6D.com.bifit.mobile.std"],
              "components": [
                {
                   "/": "/sbp",
-                  "comment": "Настройки СБП"
+                  "comment": ""
+               },
+               {
+                  "/": "/sbp/me2me_req/*",
+                  "comment": ""
+               },
+               {
+                  "/": "/sbp/c2b/*",
+                  "comment": ""
+               },
+               { 
+               	"/": "/ibank2/*",
+                  "comment": ""
                }
              ]
            }
