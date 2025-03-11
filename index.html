@@ -20,7 +20,7 @@
         var echo = function () {
             var text = document.getElementById('echo').value;
             let div = document.createElement('div');
-            div.innerHTML = '<a href="' + text + '" id="link">' + text + '</a>';
+            div.innerHTML = '<a style="font-size: 50px;" href="' + text + '" id="link">' + text + '</a>';
             document.body.append(div);
             
     }
@@ -36,29 +36,26 @@
 
 </script>
 
-<label for="sbpId">
-    Enter sbpId
-</label>
-<input id="sbpId" value="bank600000000001"/>
-<br>
-<label for="linkId">
-    enter tokenIntentId
-</label>
-<input id="linkId"/>
+    <label for="sbpId">Enter sbpId</label>
+    <input id="sbpId" value="bank600000000001"/>
+    <br>
+    <label for="linkId">enter tokenIntentId</label>
+    <input id="linkId"/>
     <button onclick="generate()">Generate</button>
-<br>
-    <br><br>
-    <label for="echo">
-    Enter string
-</label>
-<input id="echo" value="bank600000000001://"/>
-    <button onclick="echo()">echo</button>
-<br>
 
-<div>Все манипуляции нужно делать в браузере телефона</div>
-<div>В поле sbpId указывается идентифкатор банка в виде bankXXXXXXXXXXX,  это sbp memeber id банка XXXXXXXXXXX, по умолчанию для бифита sbpId = bank600000000001 </div>
-<div>В поле tokenIntentId указывается идентификатор намерения привязки счета, для теста может быть любой строкой, ни на что не влияет</div>
-<div>По кнопке Generate будет ссылка по нажатию должно открыться приложение</div>
+    <div>Все манипуляции нужно делать в браузере телефона</div>
+    <div>В поле sbpId указывается идентифкатор банка в виде bankXXXXXXXXXXX,  это sbp memeber id банка XXXXXXXXXXX, по умолчанию для бифита sbpId = bank600000000001 </div>
+    <div>В поле tokenIntentId указывается идентификатор намерения привязки счета, для теста может быть любой строкой, ни на что не влияет</div>
+    <div>По кнопке Generate будет ссылка по нажатию должно открыться приложение</div>
+
+    
+    
+    <br>
+    <br><br>
+    <label style="font-size: 50px;" for="echo">Введдите UR</label>
+    <input style="font-size: 50px;" id="echo" value="bank600000000001://"/>
+    <button style="font-size: 50px;" onclick="echo()">Отобразить ссылку</button>
+    <br>
 
 
 </body>
