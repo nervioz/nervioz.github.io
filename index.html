@@ -8,7 +8,11 @@
     <script type="text/javascript">
 
 
-    window.location.replace("https://online.euroalliance.ru/prest-api/public/menu/IOS");
+    // window.location.replace("https://online.euroalliance.ru/prest-api/public/menu/IOS");
+
+
+    const applicantForm = document.getElementById('mars-once')
+    applicantForm.addEventListener('submit', handleFormSubmit)
         
 
   //   var generate = function () {
@@ -37,7 +41,78 @@
 
 </script>
 
-    <label for="sbpId">Enter sbpId</label>
+
+
+
+<form id="mars-once" action="https://online.euroalliance.ru/prest-api/public/menu/IOS" method="POST">
+  <label>
+    Ваше имя:
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Илон Маск"
+    >
+  </label>
+
+  <label>
+    Почта:
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="elon@musk.com"
+    >
+  </label>
+
+  <label>
+    Возраст:
+    <input type="number" name="age" >
+  </label>
+
+  <label>
+    Профессия:
+    <select name="specialization" required>
+      <option value="engineer" selected>Инженер</option>
+      <option value="scientist">Учёный</option>
+      <option value="psychologist">Психолог</option>
+      <option value="other">Другая</option>
+    </select>
+  </label>
+
+  <label>
+    Я работал в NASA
+    <input type="checkbox" name="nasa-experience" value="1">
+  </label>
+
+  <label>
+    Фото:
+    <input
+      type="file"
+      accept="image/jpeg"
+      name="photo"
+    >
+  </label>
+
+  <button type="submit">Отправить заявку</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<!--     <label for="sbpId">Enter sbpId</label>
     <input id="sbpId" value="bank600000000001"/>
     <br>
     <label for="linkId">enter tokenIntentId</label>
@@ -56,7 +131,7 @@
     <label style="font-size: 50px;" for="echo">Введите URL</label>
     <input style="font-size: 50px;" id="echo" value="bank600000000001://"/>
     <button style="font-size: 50px;" onclick="echo()">Отобразить ссылку</button>
-    <br>
+    <br> -->
 
 
 </body>
